@@ -20,7 +20,7 @@ A plataforma contém um sistema de login na platorma utilizando contas para arma
 [contact](https://i.ibb.co/ckjdGp4/contato.png)
 
 A versão desktop é para utilização de operadores da plataforma, para resolução de possíveis problemas.
-[desktop](https://i.ibb.co/z2Nf44Z/desktop.png)
+[desktop](https://www.imagemhost.com.br/images/2021/01/03/desktop.png)
 
 # Banco de dados
 Para o total funcionamento do projeto, é necessario a criação do banco de dados.
