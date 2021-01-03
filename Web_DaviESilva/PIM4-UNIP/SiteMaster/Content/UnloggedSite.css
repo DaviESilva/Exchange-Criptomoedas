@@ -1,0 +1,289 @@
+﻿.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+    border-radius: 5px;
+}
+
+
+/* Move down content because we have a fixed TopBar and SideNav that is 10% height and width */
+body {
+    text-decoration-line: none;
+    top: 0;
+    left: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    display: inline;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin: 25px;
+    margin-left: 185px;
+    top: 30px;
+    height: 100%;
+}
+
+.TopBar {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(#fc03d1, #ff89ea, #fed2d7);
+    padding: 15px;
+    display: inline;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+    .TopBar a {
+        color: black;
+        text-decoration-line: none;
+        padding-top: 5px;
+    }
+
+.TopBarOptions a {
+    text-align: right;
+    padding-right: 40px;
+    float: right;
+    font-size: 16px;
+    color: white;
+}
+
+.SideNav {
+    left: 0px;
+    top: 60px;
+    position: fixed;
+    background-image: linear-gradient(#ff8b8c, white);
+    height: 100%;
+    padding: 50px;
+    width: auto;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+    .SideNav br {
+        margin-bottom: 70px;
+    }
+
+    .SideNav a, SideNavBottom a {
+        color: black;
+    }
+
+.SideNavBottom a {
+    vertical-align: bottom;
+    text-decoration-line: none;
+}
+
+.footerCss {
+    text-shadow: 2px 2px 5px red;
+    background-image: linear-gradient(rgba(255, 139, 140, 0.90), rgba(255, 255, 255, 0.90));
+    border-radius: 5px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+/* Login Page */
+
+.LoginBlock {
+    background-color: #ff8b8c;
+    max-width: 330px;
+    top: 315px;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+    .LoginBlock input {
+        width: 90%;
+        height: 30px;
+    }
+
+        .LoginBlock input[type="checkbox"] {
+            width: auto;
+        }
+
+.KeepLogged {
+    text-align: left;
+    padding: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+/* Register Page */
+.Register {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 139, 140, 0.91);
+    padding: 25px;
+    width: 80%;
+    padding-top: 1px;
+}
+
+    .Register input {
+        width: 100%;
+        height: 25px;
+        display: inline;
+    }
+
+    .Register .Terms {
+        display: inline-block;
+        width: 45%
+    }
+
+    .Register .AlreadyRegistered {
+        text-align: right;
+        display: inline-block;
+        width: 50%
+    }
+
+    .Register .RegisterInput{
+        width: 300px;
+        margin: 5px;
+        height: 25px;
+        margin-right: 50px;
+    }
+
+    .Submit {
+        margin-top: 20px;
+        width: 90%;
+        padding: 0px;
+        text-align: center;
+        font-size: large;
+        border-radius: 5px;
+    }
+
+    .Submit:hover {
+        background-color: #3ed37c;
+    }
+
+.popup {
+    position: absolute;
+    display: block;
+    background-color: #ffb6c1;
+    z-index: 3;
+    width: 34%;
+    height: 250px;
+    margin: auto;
+    color: black;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    padding-bottom: 55px;
+    visibility: hidden;
+    border: double 1px black;
+}
+
+.btnClose {
+    width: 5px;
+    height: 25px;
+    color: red;
+    text-align: center;
+    display: inline-block;
+    float: right;
+}
+
+.popup .text {
+    font-weight: 900;
+    color: black;
+    height: 250px;
+    border: none;
+    width: 30%;
+    font-size: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.popup input[type="text"] {
+    width: 100%;
+    overflow: scroll;
+}
+
+/* Contact Page */
+.ContactContainer {
+    float: right;
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+    background-image: radial-gradient(#fec7c7, rgba(255, 139, 140, 0.90));
+    padding: 10px;
+}
+
+    .ContactContainer input[type="email"] {
+        width: 100%;
+        height: 20px;
+    }
+
+.SocialMedias {
+    width: 60%;
+}
+
+    .SocialMedias img {
+        display: inline;
+        max-width: 80px;
+        height: auto;
+        padding: 20px;
+        overflow: auto;
+    }
+
+.ContactContainer textarea {
+    resize: both;
+    width: 80%;
+    height: 200px;
+}
+
+/* Home Page */
+
+.ContainerHome {
+    max-width: 70%;
+    padding: 25px;
+    box-sizing: border-box;
+    background-image: radial-gradient(circle, white, #f36891);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-style: solid;
+    vertical-align: middle;
+}
+
+.ContainerHome2 {
+    text-align: center;
+}
+
+#imagelogo {
+    vertical-align: top;
+    height: 32px;
+}
+
+.button1 {
+    background-color: #4c9feb;
+    border: solid;
+    color: black;
+    width: 40%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}

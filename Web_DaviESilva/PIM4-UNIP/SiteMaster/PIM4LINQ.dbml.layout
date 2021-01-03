@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PIM4LINQ">
+  <DataContextMoniker Name="/PIM4LINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f86d3417-8a5a-4e84-bd30-5f6ea9623f11" absoluteBounds="3.625, 2.125, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/PIM4LINQDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9dd2ee28-1e50-4932-bf36-95f0238695e4" absoluteBounds="3.64, 2.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

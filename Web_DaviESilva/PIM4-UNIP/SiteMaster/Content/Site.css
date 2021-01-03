@@ -1,0 +1,414 @@
+﻿/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column */
+@import url('Site.css');
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+
+/* Move down content because we have a fixed TopBar and SideNav that is 60px height and ~150px width */
+body {
+    top: 0;
+    left: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    display: inline;
+    font-size: 16px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: page;
+    height: 100%;
+    margin-left: 220px;
+    margin-top: 60px;
+}
+
+.TopBar {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(#fc03d1, #ff89ea, #fed2d7);
+    padding: 15px;
+    display: inline;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+    .TopBar a {
+        color: black;
+    }
+
+.TopBarOptions {
+    width: 100%;
+    padding-top: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+    top: 0;
+    right: 50px;
+    max-height: 30px;
+    position: absolute;
+}
+
+.TopBarOptions2 {
+    margin-left: 15px;
+    display: inline;
+}
+
+.SideNav {
+    left: 0px;
+    top: 60px;
+    position: fixed;
+    background-image: linear-gradient(#ff8b8c, white);
+    height: 100%;
+    padding: 40px;
+    width: auto;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.SideNavBottom {
+    margin-top: 69px;
+    padding-top: 69px;
+}
+
+.SideNav a, SideNavBottom a {
+    color: black;
+}
+
+.SideNavBottom a {
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.footerCss {
+    text-shadow: 2px 2px 5px red;
+    background-image: linear-gradient(rgba(255, 139, 140, 0.90), rgba(255, 255, 255, 0.90));
+    border-radius: 5px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.popup {
+    position: absolute;
+    display: block;
+    background-color: #ffb6c1;
+    z-index: 3;
+    width: 34%;
+    height: 250px;
+    margin: auto;
+    color: black;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    padding-bottom: 55px;
+    visibility: hidden;
+    border: double 1px black;
+}
+
+.btnClose {
+    width: 5px;
+    height: 25px;
+    color: red;
+    text-align: center;
+    display: inline-block;
+    float: right;
+}
+
+.popup .text {
+    font-weight: 900;
+    color: black;
+    height: 250px;
+    border: none;
+    width: 30%;
+    font-size: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.popup input[type="text"] {
+    width: 100%;
+    overflow: scroll;
+}
+
+
+/* Home Page */
+
+.Home {
+    text-align: center;
+}
+
+.HomeBlock {
+    background-color: #ff8b8c;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.YellowBlock1 {
+    background-color: #3e52b5;
+    float: left;
+    display: inline;
+    top: 138px;
+}
+
+.Column {
+    width: 50%;
+    float: left;
+    display: inline;
+}
+
+.Yelloblock2 {
+    background-color: #3e52b5;
+    float: left;
+    display: inline;
+    margin-left: 50px;
+}
+
+.Column2 {
+    width: 100%;
+}
+
+/* Contact Page */
+
+.ContactContainer {
+    float: right;
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+    background-image: radial-gradient(#fec7c7, rgba(255, 139, 140, 0.90));
+    padding: 10px;
+}
+
+    .ContactContainer input[type="email"] {
+        width: 100%;
+        height: 20px;
+    }
+
+.SocialMedias {
+    width: 60%;
+}
+
+    .SocialMedias img {
+        display: inline;
+        max-width: 80px;
+        height: auto;
+        padding: 20px;
+        overflow: auto;
+    }
+
+.ContactContainer textarea {
+    resize: both;
+    width: 80%;
+    height: 200px;
+}
+
+/* Profile Page */
+
+.Profile {
+    text-align: center;
+}
+
+    .Profile label {
+        margin: 10px;
+    }
+
+    .Profile img {
+        padding: 30px;
+    }
+
+    .Profile td {
+        width: 100%;
+    }
+
+    .Profile input {
+        height: 30px;
+        width: 250px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+        .Profile input[type="submit"] {
+            background-color: #ff97d4;
+        }
+
+    .Profile .Gender input {
+        width: 15px;
+    }
+
+/* ViewMarket Page */
+
+.tabela td, .tabela th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.tabela {
+    border: 1px solid black;
+    background-color: #3e52b5;
+    font-weight: bold;
+}
+
+    .tabela a {
+        color: black;
+    }
+
+.color1 {
+    color: #ffffff;
+}
+
+.sigla1 {
+    color: #abb1c8;
+}
+
+.corfundo1 {
+    background-color: #17df43;
+    padding: 5px;
+}
+
+.corfundo2 {
+    background-color: #ee0d0d;
+    padding: 5px;
+}
+
+/* Wallet Page */
+
+#WalletPage {
+    height: auto;
+    text-align: center;
+}
+
+    #WalletPage input {
+        height: 35px;
+        width: 250px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+
+    #WalletPage td {
+        width: 71%;
+    }
+
+/* Crypto Pages */
+
+.CryptoPage {
+    width: 100%;
+    display: flex;
+}
+
+    .CryptoPage .blue-container {
+        background-color: #e6e8fa;
+        width: 22rem;
+        display: inline-block;
+        padding: 10px;
+        justify-items: center;
+    }
+
+        .CryptoPage .blue-container .image-crypto {
+            height: 100px;
+            float: left;
+            padding: 5px;
+            margin-right: 40px;
+        }
+
+    .CryptoPage .prices {
+        margin-top: 25px;
+    }
+
+    .CryptoPage .grafic {
+        margin-top: 40px;
+        height: 300px;
+    }
+
+.BuyCard {
+    background-color: #ff9393;
+    width: 500px;
+    height: 280px;
+    padding: 10px;
+    border: 2px, solid, black;
+}
+
+    .BuyCard .Top {
+        display: flex;
+        border: 2px, solid, black;
+        background-color: #f7b6b6;
+        margin: 5px;
+        padding-top: 5px;
+        font-weight: 600;
+        width: 100%
+    }
+
+        .BuyCard .Top img {
+            justify-content: right;
+            display: inline;
+            float: right;
+            height: 45px;
+        }
+
+
+        .BuyCard .Top .BuyLogo img {
+            height: 30px;
+            display: flex;
+        }
+
+    .BuyCard .InputLogo img {
+        height: 35px;
+        padding: 5px;
+    }
+
+
+
+.SellCard {
+    background-color: #79e15b;
+    width: 500px;
+    height: 280px;
+    padding: 5px;
+    border: 2px, solid, black;
+}
+
+    .SellCard .Top {
+        display: flex;
+        border: 2px, solid, black;
+        background-color: #03f878;
+        margin: 10px;
+        padding-top: 5px;
+        font-weight: 600;
+        width: 98%
+    }
+
+/* History Page */
+
+.tabelahistorico td, tabelahistorico th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.tabelahistorico tr:nth-child(even) {
+    background-color: #dddddd;
+}

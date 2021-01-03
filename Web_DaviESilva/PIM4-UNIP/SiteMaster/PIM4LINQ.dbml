@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PIM4DB" Class="PIM4LINQDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=PIM4DB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="PIM4DBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="IdUser" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Document" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="btcValue" Type="System.Decimal" DbType="Decimal(16,8) NOT NULL" CanBeNull="false" />
+      <Column Name="ethValue" Type="System.Decimal" DbType="Decimal(16,8) NOT NULL" CanBeNull="false" />
+      <Column Name="dogeValue" Type="System.Decimal" DbType="Decimal(16,8) NOT NULL" CanBeNull="false" />
+      <Column Name="usdtValue" Type="System.Decimal" DbType="Decimal(16,8) NOT NULL" CanBeNull="false" />
+      <Column Name="xrpValue" Type="System.Decimal" DbType="Decimal(16,8) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

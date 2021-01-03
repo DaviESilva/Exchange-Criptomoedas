@@ -1,0 +1,23 @@
+Para o total funcionamento do projeto, é necessario a criação do banco de dados.
+Todas as soluções da plataforma utilizam o mesmo banco de dados, tendo assim uma integração.
+
+O nome do banco deve ser: PIM4DB
+
+E é somente necessária uma tabela chamada: User
+
+O código para criação da tabela é:
+
+CREATE TABLE [dbo].[User] (
+    [IdUser]    INT             IDENTITY (1, 1) NOT NULL,
+    [Username]  NVARCHAR (15)   NOT NULL,
+    [Email]     NVARCHAR (30)   NOT NULL,
+    [Password]  NVARCHAR (20)   NOT NULL,
+    [Birthday]  NVARCHAR (10)   NOT NULL,
+    [Document]  NVARCHAR (20)   NOT NULL,
+    [btcValue]  NUMERIC (16, 8) NOT NULL,
+    [ethValue]  NUMERIC (16, 8) NOT NULL,
+    [dogeValue] NUMERIC (16, 8) NOT NULL,
+    [usdtValue] NUMERIC (16, 8) NOT NULL,
+    [xrpValue]  NUMERIC (16, 8) NOT NULL,
+    CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([IdUser] ASC)
+);
