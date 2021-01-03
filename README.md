@@ -9,18 +9,18 @@
 
 # **Descrição:** 
 O projeto envolve a criação de uma plataforma de compra e venda de criptomoedas com utilização de uma versão Web, Desktop e Mobile. 
-[Home](https://i.ibb.co/4Rbs3RJ/home.png)
+![Home](images/home.png)
 
 A plataforma contém um sistema de login na platorma utilizando contas para armazenar suas informações de compra e venda de critoativos.
-[cadastro](https://i.ibb.co/G0pGCtT/cadastro.png)
+![cadastro](~/images/cadastro.png)
 
 É possível realizar a compra e venda de criptomoedas uma vez que cadastrado na plataforma.
-[moedas](https://i.ibb.co/ymCt532/moedas.png)
+![moedas](~/images/moedas.png)
 
-[contact](https://i.ibb.co/ckjdGp4/contato.png)
+![contact](~/images/contato.png)
 
 A versão desktop é para utilização de operadores da plataforma, para resolução de possíveis problemas.
-[desktop](https://www.imagemhost.com.br/images/2021/01/03/desktop.png)
+![desktop](~/images/desktop.png)
 
 # Banco de dados
 Para o total funcionamento do projeto, é necessario a criação do banco de dados.
