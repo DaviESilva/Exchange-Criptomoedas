@@ -1,4 +1,4 @@
-# Projeto - Exchange de Criptmoedas - WEB/Desktop :desktop_computer:
+# Plataforma - Exchange de Criptmoedas - Web/Desktop :desktop_computer:
 
 
 **:man_student: Dev: Daví Evangelista Silva**
@@ -12,15 +12,15 @@ O projeto envolve a criação de uma plataforma de compra e venda de criptomoeda
 ![Home](images/home.png)
 
 A plataforma contém um sistema de login na platorma utilizando contas para armazenar suas informações de compra e venda de critoativos.
-![cadastro](~/images/cadastro.png)
+![cadastro](images/cadastro.png)
 
 É possível realizar a compra e venda de criptomoedas uma vez que cadastrado na plataforma.
-![moedas](~/images/moedas.png)
+![moedas](images/moedas.png)
 
-![contact](~/images/contato.png)
+![contact](images/contato.png)
 
 A versão desktop é para utilização de operadores da plataforma, para resolução de possíveis problemas.
-![desktop](~/images/desktop.png)
+![desktop](images/desktop.png)
 
 # Banco de dados
 Para o total funcionamento do projeto, é necessario a criação do banco de dados.
@@ -30,19 +30,4 @@ O nome do banco deve ser: PIM4DB
 
 E é somente necessária uma tabela chamada: User
 
-O código para criação da tabela é:
-
-CREATE TABLE [dbo].[User] (
-    [IdUser]    INT             IDENTITY (1, 1) NOT NULL,
-    [Username]  NVARCHAR (15)   NOT NULL,
-    [Email]     NVARCHAR (30)   NOT NULL,
-    [Password]  NVARCHAR (20)   NOT NULL,
-    [Birthday]  NVARCHAR (10)   NOT NULL,
-    [Document]  NVARCHAR (20)   NOT NULL,
-    [btcValue]  NUMERIC (16, 8) NOT NULL,
-    [ethValue]  NUMERIC (16, 8) NOT NULL,
-    [dogeValue] NUMERIC (16, 8) NOT NULL,
-    [usdtValue] NUMERIC (16, 8) NOT NULL,
-    [xrpValue]  NUMERIC (16, 8) NOT NULL,
-    CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([IdUser] ASC)
-);
+O código para criação da tabela pode ser encontrado no arquivo txt do repositório.
